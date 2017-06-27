@@ -1,0 +1,232 @@
+baseurl = "http://allankevinrichie.github.io/"  # End your URL with a `/` trailing slash.
+title = "My Tiny Site"
+copyright = "&copy; 2017 Ziheng Zhang"
+theme = "academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = "ziheng"
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = ""
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  name = "Zhang Ziheng(张子恒)"
+  role = "Master of Computer Systems and Applications"
+  organization = "Shanghaitech University"
+  organization_url = ""
+  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "allankevinrichie@gmail.com"
+  address = "Room 1A-313, SIST Building, Shanghaitech University, Shanghai, 201210, China"
+  office_hours = ""
+  phone = "13122089902"
+  skype = "allankevinrichie@outlook.com"
+  telegram = ""
+
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = ""
+
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Mon, Jan 2, 2006"
+
+  # Enable global LaTeX math rendering?
+  #   If false, you can enable it locally on a per page basis.
+  math = true
+
+  # Highlight.js options
+  #   highlight
+  #     Enable global source code highlighting?  If false, you can
+  #     override it for a particular page in that page's preamble.
+  #
+  #     Example: highlight = true
+  #
+  #   highlight_languages
+  #     Add support for highlighting additional languages. Support for
+  #     languages mentioned here will be included in all pages. You
+  #     can also set this variable for a particular page in that
+  #     page's preamble.
+  #
+  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
+  #
+  #   highlight_style
+  #     Choose a different CSS style for highlighting source
+  #     code. Setting this option in a page's preamble has no
+  #     effect.
+  #
+  #     Example: highlight_style = "github-gist"
+  #
+  #   highlight_version
+  #     Choose the version of highlight.js you want. Setting this
+  #     option in a page's preamble has no effect.
+  #
+  #     Example: highlight_version = "9.9.0"
+  #
+  #   For the list of supported languages, styles, and versions, see:
+  #   https://cdnjs.com/libraries/highlight.js/
+  #
+  #   For more info on the highlighting options, see:
+  #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
+  highlight = true
+  highlight_languages = ["python", "matlab", "cpp", "markdown", "json", "yaml"]
+  highlight_style = "github"
+  highlight_version = "9.12.0"
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+
+  # Publication types.
+  #   Used to categorize publications.
+  #   The index of the publication type in the list is used as its unique numerical identifier.
+  #   The numeric ID is used in a publication's frontmatter to categorize it.
+  #   The language can be edited below.
+  #   For multi-lingual sites, copy this block to each language section at the end of this file.
+  publication_types = [
+    'Uncategorized',  # 0
+    'Conference proceedings',  # 1
+    'Journal',  # 2
+    'Work in progress',  # 3
+    'Technical report',  # 4
+    'Book',  # 5
+    'Book chapter'  # 6
+  ]
+
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
+  #   youtube, instagram, soundcloud
+  #
+  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   "mailto:your@email.com" as the link.
+  #
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #
+  #   Full list: https://jpswalsh.github.io/academicons/
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:zhangzh@shanghaitech.edu.cn"
+
+  [[params.social]]
+    icon = "facebook"
+    icon_pack = "fa"
+    link = "//facebook.com/richie.allan.79"
+
+#   [[params.social]]
+#     icon = "google-scholar"
+#     icon_pack = "ai"
+#     link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/allankevinrichie"
+
+
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+# [[menu.main]]
+#   name = "Publications"
+#   url = "#publications_selected"
+#   weight = 2
+
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 1
+  
+[[languages.zh.menu.main]]
+  name = "文章"
+  url = "#posts"
+  weight = 1
+ 
+
+# [[menu.main]]
+#   name = "Projects"
+#   url = "#projects"
+#  weight = 4
+
+# [[menu.main]]
+#   name = "Teaching"
+#   url = "#teaching"
+#   weight = 5
+
+[[menu.main]]
+  name = "About"
+  url = "#about"
+  weight = 10
+
+[[languages.zh.menu.main]]
+  name = "关于我"
+  url = "#about"
+  weight = 10
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 11
+
+  
+[[languages.zh.menu.main]]
+  name = "联系方式"
+  url = "#contact"
+  weight = 11
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[languages.en]
+  languageCode = "en-us"
+ 
+[languages.zh]
+  defaultContentLanguage = "en"
+  languageCode = "zh-cn"
+  title = "我的小站"
+  copyright = "&copy; 2017 张子恒"
+
+
+  
+[languages.zh.params]
+  name = "张子恒"
+  role = "计算机系统与应用硕士研究生"
+  organization = "上海科技大学"
+  address = "上海科技大学，信息学院，1A-313"  
+  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "allankevinrichie@gmail.com"
+  office_hours = ""
+  phone = "13122089902"
+  skype = "allankevinrichie@outlook.com"
+  telegram = ""
+
